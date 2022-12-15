@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Paw Paw - Random Dog Images</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+	</head>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+		}
+		.wrapper{
+			width: 100vw;
+			height: 100vh;
+			background: #A0AFB4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.card {
+			background: #3A638A;
+			width: 30%;
+			height: 90%;
+			padding: 2rem;
+			border-radius: 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.img-holder {
+			display: flex;
+			justify-content: center;
+			overflow: hidden;
+			max-height: 70%;
+		}
+
+		.img-holder img{
+			width: 90%; 
+		}
+		.card h1 {
+			color: #fff;
+			text-align: center;
+			padding-bottom: 1rem;
+		}
+
+		.controls {
+			width: 100%;
+			height: 20%;
+			/*background: #fff;*/
+			border-radius: 1rem;
+			padding: 1.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn {
+			width: 100%;
+			padding: .5rem .75rem;
+			font-size: 1rem;
+		}
+
+		.button-24 {
+		  background: #FF4742;
+		  border: 1px solid #FF4742;
+		  border-radius: 6px;
+		  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+		  box-sizing: border-box;
+		  color: #FFFFFF;
+		  cursor: pointer;
+		  display: inline-block;
+		  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+		  font-size: 16px;
+		  font-weight: 800;
+		  line-height: 16px;
+		  min-height: 40px;
+		  outline: 0;
+		  padding: 12px 14px;
+		  text-align: center;
+		  text-rendering: geometricprecision;
+		  text-transform: none;
+		  user-select: none;
+		  -webkit-user-select: none;
+		  touch-action: manipulation;
+		  vertical-align: middle;
+		}
+
+		footer {
+			position: absolute;
+			bottom: 2px;
+			right: 5px;
+			color: #393939;
+			font-style: italic;
+		}
+
+	</style>
+	<body>
+		<main class="wrapper">
+			<div class="card">
+				<h1>Paw Paw!</h1>
+				<div class="img-holder">
+					<img id="dog-img" src="https://images.dog.ceo/breeds/hound-english/n02089973_1030.jpg">
+				</div>
+				<div class="controls">
+					<div class="btn-icon"></div>
+					<button class="button-24 btn" id="btn">Generate</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			Created with &lt;3 by: <a href="https://s4hil.github.io/">Sahil Parray</a> for V ⭐
+		</footer>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
